@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+body {
+  font-family: Great Vibes;
+  line-height: 1.4;
+  background-image: url("img.jpg");
+  width: 300px;
+  margin: auto;
+}
+#title {
+  text-align: center;
+}
+p {
+  font-size: large;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-right: auto;
+}
+
+.input-heading {
+  background-color: lightpink;
+  border-radius: 2rem;
+  padding: 2.5rem 2.5rem;
+  margin: auto;
+  margin-left: 3px;
+}
+.form {
+  width: 800px;
+}
+.submit-btn {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.input-heading {
+  margin: 0 auto 1.25rem auto;
+  padding: 01.25rem;
+}
+.form-inputs {
+  display: block;
+  width: 90%;
+  height: 2rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  border: 1px solid Great Vibes;
+  border-radius: 0.25rem;
+}

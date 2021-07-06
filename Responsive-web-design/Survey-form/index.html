@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<header>
+<h1 id="title">Tell me about Music!!</h1>
+<link rel="stylesheet" href="index.css">
+</header>
+<body>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+        
+<p id="description">
+    This is a survey form where you can tell us about music you are inspired by.
+  </p>
+  <form id="survey-form">
+
+    <div class="input-heading">
+    <label for="name" id="name-label">Name</label>
+    <input id="name" type="text" name="name"  placeholder="Enter your username " required  class="form-inputs" >
+    <br>
+    <label for="email" id="email-label">Email</label>
+    
+    <input id="email" type="email" name="email" placeholder="Enter your email " required  class="form-inputs" >
+    <br>
+     <label for="number" id="number-label">Age</label>
+     <input id="number" type="number" name="number" placeholder="Enter your age " min="10" max="90" required  class="form-inputs" >
+     <br>
+     <label for="dropdown" id="dropdown" >Langauge</label>
+      <select id="dropdown" class="form-inputs" >
+        <option value="English">English</option>
+         <option value="Hindi">Hindi</option>
+         <option value="Marathi">Marathi</option>
+         <option value="Korean">Korean</option>
+        <option value="Tamil">Tamil</option>
+        </select>
+    <br>
+    <br>
+        <label for="PlayList" id="PlayList">PlayList <br> </label>
+        <input id="PlayList" type="radio" name="PlayList " value="Rock songs" >
+        <label for="PlayList" >Rock songs<br> </label>
+
+        <input id="PlayList" type="radio" name="PlayList " value="Romantic song" ></input>
+        <label for="PlayList" >Romantic song<br> </label>
+
+        <input id="PlayList" type="radio" name="PlayList " value="Soothing song" >
+        <label for="PlayList" >Soothing song<br> </label> 
+
+        <input id="PlayList" type="radio" name="PlayList " value="Podcast" >
+        <label for="PlayList" >Podcast<br> </label>
+
+        <label for="Artist">Artist<br></label>
+        <input id="checkbox" type="checkbox" name="Artist" value="Hollywood">
+        <label for="checkbox">Hollywood<br></label>
+
+        <input id="checkbox" type="checkbox" name="Artist" value="Bollywood">
+        <label for="checkbox">Bollywood<br></label>
+
+        <input id="checkbox" type="checkbox" name="Artist" value="K-pop">
+        <label for="checkbox">K-pop<br></label>
+
+        <label id="textarea" >Additional Comment</label>
+        <br>
+        <textarea id="textarea" name="instruction" rows="5" cols="33"></textarea>
+        <br>
+     <input type="submit" id="submit" value="submit" class="submit-btn">
+    </div>
+  </form>
+  </body>
+  </html>
