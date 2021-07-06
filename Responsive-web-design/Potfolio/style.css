@@ -1,0 +1,228 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(images/iimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-overflow-style: none; /*IE AND EDGE*/
+  scrollbar-width: none; /*FIREFOX*/
+}
+
+body::-webkit-scrollbar {
+  display: none; /* HIDE SCROLLBAR FROM CHROME,SAFARI,IE*/
+}
+h1,
+h2 {
+  font-family: sans-serif;
+}
+/*h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}*/
+h1,
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 45px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/***************************HEADER************************************/
+#navbar {
+  width: 100%;
+  background-color: rgb(209, 5, 39);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #000;
+  z-index: 5;
+}
+#nav-content {
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+}
+#nav-content ul {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  list-style: none;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-content ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+#nav-content ul li:last-child {
+  margin-right: 0;
+}
+#nav-content ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+#nav-content ul li a:hover {
+  color: #000;
+}
+/*********************************WELCOMING*********************************************/
+#welcome-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  transition: all.5s ease-in-out;
+}
+#welcome-section:hover {
+  transform: scale(1.5);
+}
+/*********************************PROJECTS*********************************************/
+#projects {
+  background-color: #fff;
+  padding: 20px 0;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+}
+#projects .project-tile {
+  padding-bottom: 30px;
+  padding-top: 73px;
+}
+#projects .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+#projects .cards .card {
+  display: flex;
+  width: 100%;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+/*#projects .cards .card:hover {
+  transform: scale(1.5) rotate(-15deg);
+}*/
+#projects .cards {
+  display: flex;
+
+  position: relative;
+  z-index: 10;
+}
+#projects .cards .card img {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  border-radius: 4px;
+}
+#projects .cards .card figcaption {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  font-size: 20px;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 8);
+}
+/*********************************CONTACT*********************************************/
+#contact {
+  color: #fff;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+}
+#contact:hover {
+  transform: scale(1.5);
+}
+#contact h2 {
+  margin-bottom: 0;
+}
+#contact ul {
+  padding: 0;
+  font-size: 30px;
+  list-style: none;
+  width: 100%;
+}
+#contact ul li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 15px;
+  transition: all 0.5s ease-in-out;
+}
+#contact ul li:hover {
+  transform: scale(1.5) rotate(-15deg);
+}
+#contact ul li:last-child {
+  margin-right: 0;
+}
+#contact ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer {
+  width: 100%;
+  background-color: #fff;
+  border-top: 2px solid #be3144;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+/*********************************MEDIA QUERY**********************************/
+@media (min-width: 600px) {
+  .container {
+    font-size: 10px;
+  }
+  #nav-content ul {
+    font-size: 24px;
+  }
+  #nav-content ul li a {
+    padding: 46px;
+  }
+  #nav-content ul li a:hover {
+    background-color: #000;
+    color: #be3144;
+  }
+  #projects .cards {
+    flex-direction: column;
+  }
+  /* #projects .cards {
+    grid-template-columns: 1fr 1fr;
+  }*/
+} /*
+@media (min-width: 900px) {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+*/
